@@ -8,4 +8,8 @@ More Info:		http://diythemes.com/thesis/rtfm/custom-css/
 #respond_intro p { font-size: 14px; }
 #comment_form p { font-size: 14px; }
 #culturepundits-adheader { font-size: 12px; }
+.format_text img.frame, .format_text .wp-caption {
+  border: 0;
+  background: #fff;
+}
 
