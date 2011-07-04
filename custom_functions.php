@@ -11,7 +11,7 @@
 
 function my_footer() {
 ?>
-  <p><a href="http://diythemes.com/?a_aid=tristanmedia">Thesis WordPress Theme</a> from DIYthemes</p>
+  <p>Hosted by <a href="http://www.webfaction.com/?affiliate=bhoggard">Webfaction</a> | <a href="http://diythemes.com/?a_aid=tristanmedia">Thesis WordPress Theme</a> from DIYthemes</p>
 <?php
 }
 
