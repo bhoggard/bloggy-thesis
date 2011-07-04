@@ -1,0 +1,9 @@
+/*
+File:			custom.css
+Description:	Custom styles for Thesis
+More Info:		http://diythemes.com/thesis/rtfm/custom-css/
+*/
+
+.headline_meta span, .headline_meta, .format_text .to_comments span { font-size: 12px; font-style: normal; text-transform: lowercase; }
+#respond_intro p { font-size: 14px; }
+#comment_form p { font-size: 14px; }
