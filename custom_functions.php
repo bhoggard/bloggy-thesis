@@ -18,7 +18,9 @@ function my_footer() {
 remove_action('thesis_hook_footer', 'thesis_attribution'); 
 add_action('thesis_hook_footer', 'my_footer');
 
-function custom_byline() { ?>
+function custom_byline() { 
+  if (!is_page()) {
+?>
 
 <p class="headline_meta"><?php echo get_the_time('Y-m-d'); ?>
  | <span><a href="<?php the_permalink(); ?>#comments" rel="nofollow">
@@ -26,6 +28,7 @@ function custom_byline() { ?>
  in <span><?php echo get_the_category_list(','); ?></span></p>
 
 <?php }
+}
 
 remove_action('thesis_hook_after_post', 'thesis_comments_link');
 add_action('thesis_hook_after_post', 'custom_byline');
