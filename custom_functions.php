@@ -32,3 +32,29 @@ function custom_byline() {
 
 remove_action('thesis_hook_after_post', 'thesis_comments_link');
 add_action('thesis_hook_after_post', 'custom_byline');
+
+/* 404 stuff */
+function custom_thesis_404_title() {
+?>
+Page not found
+<?php 
+}
+
+remove_action('thesis_hook_404_title', 'thesis_404_title');
+add_action('thesis_hook_404_title', 'custom_thesis_404_title');
+
+function custom_thesis_404_content() {
+?>
+<p>The page you were looking for was not found. Bloggy was redesigned in July 2011, so try one of these options to find what you were looking for.</p>
+
+<ul> 
+        <li>Use the search box to your right.</li>
+	<li>Go to the <a href="/" rel="nofollow">home page</a>.</li> 
+</ul>
+<?php
+}
+
+remove_action('thesis_hook_404_content', 'thesis_404_content');
+add_action('thesis_hook_404_content', 'custom_thesis_404_content');
+
+
